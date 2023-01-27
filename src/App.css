@@ -1,38 +1,64 @@
-.App {
+*{
+  padding:0;
+  margin:0;
+}
+.container{
+  background-color: #d8d8f6;
+  width: 100%;
+  height:auto;
+}
+.searchForm{
   text-align: center;
+  justify-items: center;
+  margin:auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  padding:10px;
+  margin:5px;
+  width:50%;
+  margin-top:2%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  padding:10px;
+  background-color: #b18fcf;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipeShow{
+  width:50%;
+  text-align: center;
+  
+}
+.recipies{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+li{
+  text-align: left;
+  margin-left:5%;
+  list-style: none;
+  
+}
+a{
+  text-decoration: none;
+  color:#553f67;
+}
+.displayCal{
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #b18fcf;
+  width: 50%;
+  text-align: center;
+  margin:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  color:#fff;
+  font-size: 18px;
+}
+.recipeItem{
+  background-color:#f4eefa;
+  padding:20px;
+  width:500px;
+  margin:5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
